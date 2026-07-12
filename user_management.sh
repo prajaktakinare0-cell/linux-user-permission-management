@@ -16,7 +16,7 @@ delete_user()
  echo "User $deluser deleted successfully"
 }
 
-view_User()
+view_user()
 {
  echo "List of Users: "
  cut -d: -f1 /etc/passwd
