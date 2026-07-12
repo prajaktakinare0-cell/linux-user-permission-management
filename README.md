@@ -19,7 +19,7 @@ Linux User Permission Mangement is a Bash Shell Scripting project used to manage
 - Linus (Ubuntu)
 - Bash SHell Scripting
 
-## Commends Used
+## Commands Used
 - adduser
 - deluser
 - addgroup
