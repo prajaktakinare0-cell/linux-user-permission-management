@@ -1,22 +1,24 @@
+#!/bin/bash
+
 create_user()
 {
  read -p "Enter username: " username
- sudo adduser $username
+ sudo adduser "$username"
  
- echo "User $username created successfully
+ echo "User $username created successfully"
 
- echo "User $username created" >> activity.log"
+ echo "User $username created on $(date)" >> activity.log
 }
 
 delete_user()
 {
  read -p "Enter username: " deluser
- sudo deluser $deluser
+ sudo deluser "$deluser"
 
  echo "User $deluser deleted successfully"
 }
 
-view_User()
+view_user()
 {
  echo "List of Users: "
  cut -d: -f1 /etc/passwd
@@ -35,7 +37,7 @@ add_user_into_group()
  read -p "Enter username: " username
  read -p "Enter groupname: " groupname
   
- sudo usermode -aG $groupname $username
+ sudo usermod -aG $groupname $username
 
  echo "User $username added to group $groupname"
 }
@@ -53,9 +55,9 @@ change_file_permission()
  read -p "Enter file name: " filename
  read -p "Enter permission (example 755): " permission
 
-sudo chmod $permission $filename
+ sudo chmod $permission $filename
 
-echo "Permission changed successfully"
+ echo "Permission changed successfully"
 }
 
 check_file_permission()
@@ -78,7 +80,8 @@ exit_program()
  exit 0
 }
 
-
+while true
+do
 
 echo "Linux User Management Project"
 
@@ -106,7 +109,7 @@ case  $choice in
  ;;
 
 3)
- view_User
+ view_user
  ;;
 
 4) 
@@ -142,4 +145,10 @@ case  $choice in
  ;;
 
 esac
+echo 
+done
+
+
+
+
 
