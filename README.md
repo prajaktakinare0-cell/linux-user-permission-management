@@ -1,8 +1,8 @@
-# linux-user-permission-management
+# Linux-User-Permission-Management
 A Linux project for managing users , groups , and file permissions.
 
 ## Project Description
-Linux User Permission Mangement is a Bash Shell Scripting project used to manage users , groups , and file permissions in a linux system.
+Linux User Permission Mangament is a Bash Shell Scripting project used to manage users , groups , and file permissions in a linux system.
 
 ## Features
 - Create User
@@ -11,13 +11,13 @@ Linux User Permission Mangement is a Bash Shell Scripting project used to manage
 - Create Group
 - Add User into Group
 - Check User Details
-- Change File Permission
-- Check File Permission
+- Change File Permissions
+- Check File Permissions
 - Maintain Activity Logs
 
 ## Technologies Used
-- Linus (Ubuntu)
-- Bash Shell Scripting
+- Linux (Ubuntu)
+- Bash shell scripting
 
 ## Commands Used
 - adduser
